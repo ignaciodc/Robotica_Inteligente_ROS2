@@ -42,7 +42,7 @@ Aquí encontrarás **código fuente, ejemplos prácticos, trucos, vídeos recome
 
 El material sigue la estructura del libro:
 
-- **Capítulo 1 – Instalación y entorno de trabajo**
+- **[Capítulo 1 – Instalación y entorno de trabajo](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/Cap%C3%ADtulo%201%20%E2%80%93%20Instalaci%C3%B3n%20y%20entorno%20de%20trabajo)** 
 - **Capítulo 2 – Introducción a ROS 2**
 - **Capítulo 3 – ROS 2 con Python (`rclpy`)**
 - **Capítulo 4 – Simulación con Gazebo y RViz**
