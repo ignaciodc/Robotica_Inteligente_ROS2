@@ -24,35 +24,10 @@ Aquí encontrarás **código fuente, ejemplos prácticos, trucos, vídeos recome
 
 - 📁 **simulation/**  
   Material relacionado con simulación:
-  - Gazebo
-  - RViz
   - URDF / XACRO
   - Robots móviles y sistemas autónomos
 
-- 📁 **ai/**  
-  Aplicaciones de **Inteligencia Artificial en ROS 2**:
-  - Integración con modelos de IA
-  - Uso de LLMs (LangChain, agentes, asistentes)
-  - Percepción, toma de decisiones y control inteligente
 
-- 📁 **tricks/**  
-  Trucos, buenas prácticas y soluciones a problemas comunes:
-  - Errores frecuentes en ROS 2
-  - Configuración de entornos
-  - Debugging
-  - Optimización de nodos Python
-
-- 📁 **docker/**  
-  Archivos Docker para reproducir los entornos del libro:
-  - Dockerfiles
-  - docker-compose
-  - Entornos reproducibles para docencia
-
-- 📁 **videos/**  
-  Enlaces a vídeos demostrativos:
-  - Ejecución de ejemplos
-  - Simulaciones
-  - Explicaciones visuales paso a paso
 
 - 📁 **resources/**  
   Recursos adicionales:
