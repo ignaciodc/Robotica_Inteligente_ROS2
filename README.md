@@ -70,5 +70,5 @@ Los requisitos específicos se indican en cada subcarpeta.
 ## 🚀 Cómo usar este repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-cd TU_REPOSITORIO
+git https://github.com/ignaciodc/Robotica_Inteligente_ROS2.git 
+cd Robotica_Inteligente_ROS2
