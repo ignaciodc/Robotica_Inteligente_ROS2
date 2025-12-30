@@ -1,6 +1,6 @@
 # Robotica_Inteligente_ROS2
 
-
+![Arquitectura ROS 2](imagenes/esta.jpg)
 
 
 # 📘 Material adicional – *ROS 2 con Python: Robótica Inteligente e IA Aplicada*
