@@ -9,7 +9,7 @@ Este repositorio contiene **material complementario** al libro:
 
 > **ROS 2 con Python: Robótica Inteligente e IA Aplicada**
 
-Aquí encontrarás **código fuente, ejemplos prácticos, trucos, vídeos recomendados y recursos adicionales** que amplían y refuerzan los contenidos teóricos del libro, con un enfoque didáctico y aplicado.
+Aquí encontrarás **código fuente, ejemplos prácticos, trucos, vídeos recomendados y recursos adicionales** que amplían y refuerzan los contenidos teóricos del libro, con un enfoque didáctico y aplicado. Consúltalo con frecuencia porque se irá actualizando.
 
 ---
 
