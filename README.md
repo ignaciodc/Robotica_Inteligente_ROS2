@@ -15,21 +15,21 @@ Aquí encontrarás **código fuente, ejemplos prácticos, trucos, vídeos recome
 
 ## 📂 Estructura del repositorio
 
-- 📁 **code/**  
+- 📁 **[code/](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/)** 
   Código fuente completo de ejemplos del libro, organizado por capítulos y secciones.
 
-- 📁 **examples/**  
+- 📁 **[examples/](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/examples/)**   
   Ejemplos adicionales no incluidos íntegramente en el texto:  
   nodos, publishers, subscribers, services, actions, launch files, etc.
 
-- 📁 **simulation/**  
+- 📁 **[simulation/](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/simulation/)** 
   Material relacionado con simulación:
   - URDF / XACRO
   - Robots móviles y sistemas autónomos
 
 
 
-- 📁 **resources/**  
+- 📁 **[resources/](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/resources/)**   
   Recursos adicionales:
   - Enlaces oficiales
   - Artículos científicos
