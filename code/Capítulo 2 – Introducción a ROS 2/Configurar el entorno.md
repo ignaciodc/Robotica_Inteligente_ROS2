@@ -1,4 +1,4 @@
-### Configurar el entorno:
+#### Configurar el entorno:
 
 Para configurar el entorno se debe añadir la línea ```~/.bashrc``` al final del archivo _setup_. Esto hace que cada vez que abra una terminal se cargue automáticamente el entorno de ROS 2 Humble. 
 
