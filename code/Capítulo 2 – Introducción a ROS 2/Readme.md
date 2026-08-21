@@ -1,4 +1,4 @@
-## Capítulo 2. INSTALACIÓN Y PREPARACIÓN DEL ENTORNO  ##
+# Capítulo 2. INSTALACIÓN Y PREPARACIÓN DEL ENTORNO  #
 
 **Este capítulo se ha dedicado para explicar de manera extensa y detallada todo lo necesario para poder tener el sistema preparado para poder usar ROS 2**.
 
