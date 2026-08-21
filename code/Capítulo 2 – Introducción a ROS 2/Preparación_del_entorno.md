@@ -1,4 +1,4 @@
-# Los siguientes son necesarios previos a la instalación de ROS2 para preparar el entorno
+**Los siguientes son necesarios previos a la instalación de ROS2 para preparar el entorno**
 
 
 sudo apt update && sudo apt upgrade
