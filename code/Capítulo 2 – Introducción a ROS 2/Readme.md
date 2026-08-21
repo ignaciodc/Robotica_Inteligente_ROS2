@@ -7,3 +7,4 @@ Los pasos que se tienen que dar, en el orden adecuado, para instalar, configurar
 1.**[Preparación del entorno](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Instalaci%C3%B3n%20claves%20y%20repo.md)** <br>
 2.**[Instalación de claves y repositorio](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Instalaci%C3%B3n%20claves%20y%20repo.md)**<br>
 3.**[Instalación ROS 2 Humble](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Instalaci%C3%B3n%20ROS%202%20Humble.md)** <br>
+4.**[Configurar el entorno](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Configurar%20el%20entorno.md)**
