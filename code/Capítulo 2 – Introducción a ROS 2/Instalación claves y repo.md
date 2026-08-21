@@ -1,4 +1,4 @@
-### Instalación de claves y repositorio
+## Instalación de claves y repositorio
 
 Para la instalación de las claves y el repositorio se deben realizar los siguientes pasos, en el mismo orden:
 
