@@ -1,4 +1,4 @@
-### Preparación del Entorno
+## Preparación del Entorno
 
 Los siguientes son necesarios previos a la instalación de ROS2 para preparar el entorno:
 
