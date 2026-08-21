@@ -1,4 +1,4 @@
-###	Entornos virtuales en Python
+##	Entornos virtuales en Python
 
 Aunque no es obligatorio, es más que recomendable trabajar con ROS 2 mediante entornos virtuales de programación, ya que por un lado evita conflictos entre versiones de paquetes Python usados por ROS 2 y otros proyectos o el sistema. 
 
