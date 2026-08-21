@@ -9,5 +9,5 @@ Los pasos que se tienen que dar, en el orden adecuado, para instalar, configurar
 3. **[Instalación ROS 2 Humble](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Instalaci%C3%B3n%20ROS%202%20Humble.md)** <br>
 4. **[Configurar el entorno](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Configurar%20el%20entorno.md)**
 5. **[Configurar entorno virtual en Python](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Configurar%20el%20entorno.md)**
-6. **[Configurar entorno virtual en Python](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Entornos%20virtuales.md)**
+6. **[Entornos virtuales en Python](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202/Entornos%20virtuales.md)**
 
