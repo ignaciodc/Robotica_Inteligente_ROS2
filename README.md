@@ -45,12 +45,15 @@ Aquí encontrarás **código fuente, ejemplos prácticos, trucos, vídeos recome
 El material sigue la estructura del libro:
 
 - **[Capítulo 1 – Instalación y entorno de trabajo](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/Cap%C3%ADtulo%201%20%E2%80%93%20Instalaci%C3%B3n%20y%20entorno%20de%20trabajo)** 
-- **[Capítulo 2 – Introducción a ROS 2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/Cap%C3%ADtulo%201%20%E2%80%93%20Instalaci%C3%B3n%20y%20entorno%20de%20trabajo)**
-- **Capítulo 3 – ROS 2 con Python (`rclpy`)**
+- **[Capítulo 2 – Introducción a ROS 2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/Cap%C3%ADtulo%202%20%E2%80%93%20Introducci%C3%B3n%20a%20ROS%202))**
+- **Capítulo 3 – Primeros pasos con ROS 2 en Python**
 - **Capítulo 4 – Simulación con Gazebo y RViz**
-- **Capítulo 5 – Sensores, actuadores y control**
-- **Capítulo 6 – IA aplicada a sistemas robóticos**
-- **Capítulo 7 – Casos prácticos y proyectos**
+- **Capítulo 5 – Control de movimiento y navegación autónoma**
+- **Capítulo 6 – Visión por computador con ROS2 y OpenCV**
+- **Capítulo 7 – Aprendizaje automático con Python en ROS2**
+- **Capítulo 8 – Introducción a los modelos de lenguaje (LLMs) y LangChain**
+- **Capítulo 9 – Integración de LangChain con ROS2**
+- **Capítulo 10 – Agentes inteligentes con LLMs en Robótica**
 
 Cada carpeta incluye su propio `README.md` explicativo cuando es necesario.
 
