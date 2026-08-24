@@ -59,7 +59,7 @@ Cada carpeta incluye su propio `README.md` explicativo cuando es necesario.
 
 ---
 
-## 🧪 Requisitos
+## 🧪 Requisitos mínimos
 
 - Ubuntu 20.04 / 22.04
 - ROS 2 (Humble / Foxy según el capítulo)
@@ -68,7 +68,7 @@ Cada carpeta incluye su propio `README.md` explicativo cuando es necesario.
 - Gazebo / RViz
 - Docker (opcional pero recomendado)
 
-Los requisitos específicos se indican en cada subcarpeta.
+Los requisitos específicos se indican en cada subcarpeta. Aunque con el paso del tiempo habrá una distribución de ROS2 más actual y habrá que ir actualizando tanto la distribución de ROS2 como el Sistema Operativo. En cualquier caso, los ejemplos que aquí se desplieguen, salvo actualizaciones profundas que se dan en muy raros casos, seguirán sirviendo a versiones posteriores.
 
 ---
 
