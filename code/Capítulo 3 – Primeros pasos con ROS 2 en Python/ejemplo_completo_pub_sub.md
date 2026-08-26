@@ -6,6 +6,8 @@ En esta sección se va a mostrar un ejemplo completo de funcionamiento de una ar
 </p>
 
 
+La explicación del código de este ejemplo práctico completo, se encuentra perfectamente detallada en la Sección 3.4 del libro.
+
 ## Árbol de directorios
 En todo proyecto software es importantísimo tener clara la distribución de los archivos que lo componen para que las llamadas y demás conexiones se realicen de forma correcta. En un proyecto ROS2 también es muy importante esta circunstancia. A continuación se muestra el árbol de directorio del ejemplo que se propone.
 ```
