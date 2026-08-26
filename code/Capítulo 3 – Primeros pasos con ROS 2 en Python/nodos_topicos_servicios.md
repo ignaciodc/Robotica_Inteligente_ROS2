@@ -8,7 +8,7 @@ Un nodo es el componente más básico de una aplicación en ROS. Es un programa 
 * Son procesos individuales que pueden ejecutarse de forma independiente.
 * En un sistema robótico real, puedes tener muchos nodos colaborando.
 * Ejemplo: _camera_node_, _navigation_node_, _motor_controller_node_.
-* 
+  
 Siguiendo las directrices de la página oficial de ROS 2, en el siguiente código se propone la creación de un nodo:
 
 from rclpy.node import Node
@@ -18,16 +18,25 @@ class MiNodo(Node):
         super().__init__('mi_nodo')
 
 
-Explicación del cóid
-Así, en primer lugar se importa la clase base Node desde el módulo rclpy.node. Seguidamente, se define una clase nueva, como se hace normalmente en lenguaje Python, llamada MiNodo, que hereda de Node, haciendo que MiNodo sea un nodo personalizado que puede tener sus propios publicadores, suscriptores, timers, servicios, etc. 
-Por último se llama al constructor de la clase base (Node) usando super(). Aquí «mi_nodo» es el nombre del nodo en ROS 2. Este nombre aparecerá cuando se usen comandos como ros2 node list.
-3.3.2.	Tópicos
-Los tópicos (topics) son canales unidireccionales para mensajes asincrónicos. Permiten a los nodos comunicarse de manera asíncrona usando un modelo publicador/suscriptor (publisher/subscriber). Un nodo publica mensajes en un tópico, mientras otro/s nodo/s se suscribe/n para recibir esos mensajes sin enviar respuesta al nodo que publica. Se usa para flujos continuos de datos, como sensores, posición o imágenes. 
+#### Explicación del código
+
+* En primer lugar se importa la clase base _Node_ desde el módulo _rclpy.node_. 
+* Seguidamente, se define una clase nueva, como se hace normalmente en lenguaje Python, llamada MiNodo, que hereda de Node, haciendo que MiNodo sea un nodo personalizado que puede tener sus propios publicadores, suscriptores, timers, servicios, etc. 
+* Por último se llama al constructor de la clase base (_Node_) usando super(). Aquí «mi_nodo» es el nombre del nodo en ROS 2. Este nombre aparecerá cuando se usen comandos como ros2 node list.
+
+
+### Tópicos
+Los tópicos (_topics_) son canales unidireccionales para mensajes asincrónicos. Permiten a los nodos comunicarse de manera asíncrona usando un modelo publicador/suscriptor (_publisher/subscriber_). Un nodo publica mensajes en un tópico, mientras otro/s nodo/s se suscribe/n para recibir esos mensajes sin enviar respuesta al nodo que publica. Se usa para flujos continuos de datos, como sensores, posición o imágenes. 
+
 Como ejemplo se propone Un nodo de cámara publica en el topic/image_raw, y otro nodo se suscribe para procesar la imagen.
-3.3.3.	Servicios
+
+### Servicios
 Un servicio en ROS permite la comunicación sincrónica entre nodos (modelo solicitud-respuesta). En esta ocasión un nodo solicita una acción puntual, mientras otro nodo responde con un resultado.
 Ideal para tareas cortas con inicio y fin claros, como «abre la pinza», «guarda el mapa», etc. Los servicios permiten una comunicación síncrona tipo petición-respuesta. 
 Como ejemplo se propone Un nodo puede llamar a un servicio /reset_odometry para reiniciar el sistema de navegación. 
-3.3.4.	Acciones
-Las acciones permiten operaciones largas con retroalimentación. Son una extensión de los servicios, diseñados para tareas más largas o predecibles en el tiempo, que requieren seguimiento de progreso y posibilidad de cancelación. Se usa un protocolo especial: goal, feedback, result.
-Permiten enviar una orden (por ejemplo, «vaya al punto B») y recibir actualizaciones periódicas (feedback) hasta que termine o se cancele (OpenRobotics, 2024). A lo largo de la Sección 4 se explicará un ejemplo completo donde se usarán todos los elementos mostrados, incluyendo el uso de servicios.
+
+
+## Acciones
+Las acciones permiten operaciones largas con retroalimentación. Son una extensión de los servicios, diseñados para tareas más largas o predecibles en el tiempo, que requieren seguimiento de progreso y posibilidad de cancelación. Se usa un protocolo especial: _goal_, _feedback_, _result_.
+
+Permiten enviar una orden (por ejemplo, «vaya al punto B») y recibir actualizaciones periódicas (_feedback_) hasta que termine o se cancele. A lo largo de la Sección 4 se explicará un ejemplo completo donde se usarán todos los elementos mostrados, incluyendo el uso de servicios.
