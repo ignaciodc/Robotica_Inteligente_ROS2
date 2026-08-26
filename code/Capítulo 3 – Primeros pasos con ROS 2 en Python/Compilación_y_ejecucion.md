@@ -14,3 +14,6 @@ Este comando compila todo el workspace, al añadir ```--packages-select``` y el 
 * La siguiente instrucción carga el entorno del workspace compilado. Añade al entorno actual todas las variables necesarias para que ROS2 pueda encontrar los nodos, mensajes, servicios, etc. Es el equivalente a «activar» el workspace compilado. Esta instrucción la deberá ejecutar cada vez que se abra una nueva terminal, a menos que se añada al archivo ~/.bashrc.
 
 * La última instrucción ejecuta uno de los nodos definidos en tu paquete. Se ejecutará la instrucción ros2 run, es decir se ejecutará sobre el paquete «mi_paquete_python» el nodo $<$nodo$>$.
+
+
+[← Volver atrás](Readme.md)
