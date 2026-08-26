@@ -7,3 +7,6 @@ La segunda línea aplica inmediatamente los cambios realizados en ```~/.bashrc``
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
+
+
+[← Volver atrás](Readme.md)
