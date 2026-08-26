@@ -4,7 +4,7 @@ A continuación se definen y se muestra el código de los elementos fundamentale
 
 <p align="center">
   <img width="256" height="384" alt="Figura 1 2" src="https://github.com/user-attachments/assets/ccdd1ca1-1e48-417f-98f4-af8a2caf0b7c" /><br>
-  <sub><b>Figura 1.2:</b> Descripción o leyenda de la imagen aquí.</sub>
+
 </p>
 
 
