@@ -2,7 +2,6 @@
 
 En este capítulo se abordan las tareas más comunes e importantes a desarrollar cuando se trabaja con ROS2:
 
-* Crear nodos, Publicar y suscribirse a tópicos, y Usar servicios, acciones, temporizadores, parámetros, etc.
 * **[Crear nodos, Publicar y suscribirse a tópicos, y Usar servicios, acciones, temporizadores, parámetros, etc.](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%203%20%E2%80%93%20Primeros%20pasos%20con%20ROS%202%20en%20Python/cliente%20rclpy.md)**
 * **[Compilación y ejecución](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%203%20%E2%80%93%20Primeros%20pasos%20con%20ROS%202%20en%20Python/Compilaci%C3%B3n_y_ejecucion.md)**
 * **[Nodos, tópicos, servicios y acciones](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%203%20%E2%80%93%20Primeros%20pasos%20con%20ROS%202%20en%20Python/nodos_topicos_servicios.md)**
