@@ -3,7 +3,7 @@
 La simulación es una herramienta fundamental en el desarrollo de sistemas robóticos, ya que permite validar algoritmos, estrategias de control y arquitecturas de software sin necesidad de disponer del hardware físico. 
 En este capítulo abordamos los siguientes aspectos:
 * **[Tutorial de Instalación de RViz 2 y Gazebo Classic](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/tutorial_instalacion_rviz2_gazeboclassic.md)** 
-
+* **[Control y uso de sensores desde Python. Ejemplo: sensor LIDAR 2D simulado]
 
 4.3.2.2.	Estructura básica de un URDF
 4.4.2.2.	Ejemplo: sensor LIDAR 2D simulado
