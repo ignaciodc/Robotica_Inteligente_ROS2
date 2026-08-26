@@ -33,3 +33,4 @@ Las versiones que se van a proponer, Rviz 2 y Gazebo Classic, que pertenece a la
   - Con Gazebo en ejecución, abre otra terminal y ejecute:``` ros2 topic list```. Si aparece el tópico ```/clock``` la integración entre Gazebo y ROS 2 es correcta.
 
 
+[← Volver atrás](Readme.md)
