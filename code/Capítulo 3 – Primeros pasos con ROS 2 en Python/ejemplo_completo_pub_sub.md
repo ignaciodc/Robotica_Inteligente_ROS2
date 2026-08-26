@@ -74,7 +74,7 @@ Las acciones del _main_ suelen ser comunes en casi todos los elementos, a menos 
 * Al cerrar el nodo, se destruye y ROS se apaga.
 
 ## Suscriptor
-
+```
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -95,8 +95,15 @@ def main(args=None):
     rclpy.shutdown()
 if __name__ == '__main__':
     main()
+    ```
 ### Explicación del código
-* Una vez definidas las librerías que se necesitan y se declaran las clases necesarias, como ya se ha visto anteriormente, se crea una suscripción incluyendo el tipo de dato que se va a recibir, el nombre del tópico (tiene que coincidir con el nombre del tópico que se escribió en el publicador), una función que se ejecutará cada vez que llegue un mensaje por el canal del tópico indicado (self.listener_callback), y el tamaño de la cola de recepción de mensajes por si se reciben ráfagas de datos. 
-* 
+* Una vez definidas las librerías que se necesitan y se declaran las clases necesarias, como ya se ha visto anteriormente, se crea una suscripción incluyendo el tipo de dato que se va a recibir, el nombre del tópico (tiene que coincidir con el nombre del tópico que se escribió en el publicador), una función que se ejecutará cada vez que llegue un mensaje por el canal del tópico indicado ( ```self.listener_callback ```), y el tamaño de la cola de recepción de mensajes por si se reciben ráfagas de datos. 
+* Seguidamente, se definirá la función que se ejecutará cada vez que se reciba un dato. En este caso se va a imprimir el mensaje recibido en la consola (_msg.data_) con un log tipo «info».
+* Por último, la función _main_, en la última parte del código, al igual que en el publicado será común a la mayoría de los nodos suscriptores, con las mismas excepciones que se han comentado en el publicador. Las acciones que se realizarán en cualquier caso serán las siguientes:
+    * Inicializa ROS 2.
+    * Crea el nodo SubscriberNode.
+    * Entra en un bucle (_loop_) que mantiene el nodo activo (_rclpy.spin()_).
+    * Al cerrar el nodo, se destruye y ROS se apaga.
+
 
 [← Volver atrás](Readme.md)
