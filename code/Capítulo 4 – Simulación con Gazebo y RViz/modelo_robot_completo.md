@@ -1,5 +1,7 @@
-4.5.1.	URDF (modelo del robot)
-En el siguiente código se define, de forma completa, el modelo del robot, como se ha estado mostrando a lo largo de este Capítulo. Se ha decidido implementar un robot sencillo, pero excesivamente simple, para que pueda ver algo más elaborado en el ejemplo. Así, lo que a continuación se muestra es el modelo de un robot móvil terrestre de tipo diferencial:
+##	URDF (modelo del robot)
+
+El siguiente código se encuentra en la Sección 4.5.1 del libro. En él se define, de forma completa, el modelo del robot. Así, lo que a continuación se muestra es el modelo de un robot móvil terrestre de tipo diferencial:
+
 <?xml version="1.0"?>
 <robot name="robot_simple">
 
