@@ -1,7 +1,9 @@
-Las versiones que se van a proponer, Rviz 2 y Gazebo Classic, son las que mejor encajan con las versiones de sistema operativo y ROS 2 instaladas previamente. Para empezar con las instalaciones de las dos herramientas debe seguir los siguientes pasos:
+## Tutorial de Instalación de RViz 2 y Gazebo Classic 
+
+Las versiones que se van a proponer, Rviz 2 y Gazebo Classic, que pertenece a la SEcción 4.2 del libro, son las que mejor encajan con las versiones de sistema operativo y ROS 2 instaladas previamente. Para empezar con las instalaciones de las dos herramientas debe seguir los siguientes pasos:
 
 1.	Preparación del entorno ROS
-	Ejecute source /opt/ros/humble/setup.bash 
+  Ejecute source /opt/ros/humble/setup.bash 
 2.	Actualización del sistema
 	Ejecute sudo apt update
 3.	Instalación de RViz 2
