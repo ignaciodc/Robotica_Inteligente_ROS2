@@ -39,7 +39,7 @@ Seguidamente se va a mostrar y explicar el código de cada uno de los archivos q
 
 
 ## Publicador
-
+```
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -64,14 +64,14 @@ def main(args=None):
     rclpy.shutdown()
 if __name__ == '__main__':
     main()
-
+```
 ### Explicación del código
-Se ha tomado un publicador similar al que se ha empleado cuando se ha explicado el 
-Las acciones que se realizarán en cualquier caso serán las siguientes:
-•	Inicializa ROS 2.
-•	Crea el nodo PublisherNode.
-•	Entra en un bucle (loop) que mantiene el nodo activo (rclpy.spin()).
-•	Al cerrar el nodo, se destruye y ROS se apaga.
+Se ha tomado un publicador similar al que se ha empleado cuando se ha explicado el **[Cliente rclpy](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%203%20%E2%80%93%20Primeros%20pasos%20con%20ROS%202%20en%20Python/cliente%20rclpy.md)**
+Las acciones del _main_ suelen ser comunes en casi todos los elementos, a menos que se compliquen algo con hilos o excepciones. Así, el _main_ tiene la siguiente secuencia:
+* Inicializa ROS 2.
+* Crea el nodo _PublisherNode_.
+* Entra en un bucle (_loop_) que mantiene el nodo activo (_rclpy.spin()_).
+* Al cerrar el nodo, se destruye y ROS se apaga.
 
 
 [← Volver atrás](Readme.md)
