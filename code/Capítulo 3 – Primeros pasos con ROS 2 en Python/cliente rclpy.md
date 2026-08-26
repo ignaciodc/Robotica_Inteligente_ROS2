@@ -1,6 +1,6 @@
 ## Cliente rclpy 
 
-rclpy es la librería cliente de ROS 2 para Python. Proporciona clases y funciones para:
+```rclpy``` es la librería cliente de ROS 2 para Python. Proporciona clases y funciones para:
 * Crear nodos
 * Publicar y suscribirse a tópicos
 * Usar servicios, acciones, temporizadores, parámetros, etc.
