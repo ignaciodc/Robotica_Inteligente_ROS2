@@ -18,7 +18,7 @@ Aquí encontrarás **código fuente, ejemplos prácticos, trucos, vídeos recome
 ## 📂 Estructura del repositorio
 
 - 📁 **[code/](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/)** 
-  Código fuente completo de ejemplos del libro, organizado por capítulos y secciones.
+  Código fuente completo de ejemplos del libro, organizado por capítulos y secciones. El código se encuentra perfectamente detallado en el libro en cada sección que aparece.
 
 - 📁 **[examples/](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/examples/)**   
   Ejemplos adicionales no incluidos íntegramente en el texto:  
