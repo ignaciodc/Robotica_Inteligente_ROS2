@@ -47,3 +47,6 @@ rclpy.shutdown()
   * Cuando se detiene el nodo (por ejemplo, con Ctrl+C):
     * ```nodo.destroy_node()```: limpia recursos.
     * ```rclpy.shutdown()```: cierra el sistema ROS 2.
+   
+
+[← Volver al inicio](../README.md)
