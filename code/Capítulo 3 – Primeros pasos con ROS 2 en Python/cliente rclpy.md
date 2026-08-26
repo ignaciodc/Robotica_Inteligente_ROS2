@@ -49,4 +49,4 @@ rclpy.shutdown()
     * ```rclpy.shutdown()```: cierra el sistema ROS 2.
    
 
-[← Volver atrás](../Readme.md)
+[← Volver atrás](Readme.md)
