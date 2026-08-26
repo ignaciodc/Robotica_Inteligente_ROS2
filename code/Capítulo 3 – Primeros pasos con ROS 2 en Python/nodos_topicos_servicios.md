@@ -45,4 +45,4 @@ Como ejemplo se propone Un nodo puede llamar a un servicio ```/reset_odometry```
 ## Acciones
 Las acciones permiten operaciones largas con retroalimentación. Son una extensión de los servicios, diseñados para tareas más largas o predecibles en el tiempo, que requieren seguimiento de progreso y posibilidad de cancelación. Se usa un protocolo especial: _goal_, _feedback_, _result_.
 
-Permiten enviar una orden (por ejemplo, «vaya al punto B») y recibir actualizaciones periódicas (_feedback_) hasta que termine o se cancele. A lo largo de la Sección 4 se explicará un ejemplo completo donde se usarán todos los elementos mostrados, incluyendo el uso de servicios.
+Permiten enviar una orden (por ejemplo, «vaya al punto B») y recibir actualizaciones periódicas (_feedback_) hasta que termine o se cancele.
