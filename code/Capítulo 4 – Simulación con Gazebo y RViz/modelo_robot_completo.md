@@ -1,7 +1,7 @@
 ##	URDF (modelo del robot)
 
-El siguiente código se encuentra en la Sección 4.5.1 del libro. En él se define, de forma completa, el modelo del robot. Así, lo que a continuación se muestra es el modelo de un robot móvil terrestre de tipo diferencial:
-
+El siguiente código se encuentra en la Sección 4.5.1 del libro. En el mismo se detalla de una forma más amplia cada una  En él se define, de forma completa, el modelo del robot. Así, lo que a continuación se muestra es el modelo de un robot móvil terrestre de tipo diferencial:
+```
 <?xml version="1.0"?>
 <robot name="robot_simple">
 
@@ -43,3 +43,4 @@ El siguiente código se encuentra en la Sección 4.5.1 del libro. En él se defi
     <axis xyz="0 1 0"/>
   </joint>
 </robot>
+```
