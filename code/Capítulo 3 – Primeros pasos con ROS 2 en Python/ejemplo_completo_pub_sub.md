@@ -41,8 +41,6 @@ Seguidamente se va a mostrar y explicar el código de cada uno de los archivos q
 ## Publicador
 **_publisher_node.py_**
 ```
-
-
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -77,6 +75,7 @@ Las acciones del _main_ suelen ser comunes en casi todos los elementos, a menos 
 * Al cerrar el nodo, se destruye y ROS se apaga.
 
 ## Suscriptor
+**_subscriber_node.py_**
 ```
 import rclpy
 from rclpy.node import Node
@@ -107,6 +106,88 @@ if __name__ == '__main__':
     * Crea el nodo SubscriberNode.
     * Entra en un bucle (_loop_) que mantiene el nodo activo (_rclpy.spin()_).
     * Al cerrar el nodo, se destruye y ROS se apaga.
+
+## Servicio
+
+Para ejecutar un servicio se necesitan dos componentes separados, el servidor y el cliente. ROS 2 usa un modelo de comunicación basada en servicios (request-response). Esto requiere: un servidor que expone una API tipo servicio, y un cliente que la consume.
+
+### Servidor del servicio
+Un Servicio puede tener un Servidor creado y que no haya clientes que soliciten información, pero no podrá funcionar nunca sin un servidor creado.
+
+**_service_server.py_**
+   ```
+import rclpy
+from rclpy.node import Node
+from mi_robot_comunicacion.srv import MiServicio
+
+class ServiceServer(Node):
+    def __init__(self):
+        super().__init__('service_server')
+        self.srv = self.create_service(MiServicio, 'sumar_dos_numeros', self.handle_sumar)
+    def handle_sumar(self, request, response):
+        response.suma = request.a + request.b
+        self.get_logger().info(f'Sumar {request.a} + {request.b} = {response.suma}')
+        return response
+def main(args=None):
+    rclpy.init(args=args)
+    node = ServiceServer()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+if __name__ == '__main__':
+    main()
+   ```
+
+####Explicación del código
+
+* En primer lugar, se van a importar las librerías necesarias para ejecutar este componente. Destacar en este sentido que se debe importar el archivo «.srv» del servicio que contiene la descripción del mismo, y que más adelante se abordará su contenido.
+* Seguidamente, se declara una clase que herede de _Node_, como se ha realizado en los anteriores componentes- Se crea un nodo nuevo para el servicio servidor.
+* A continuación, se crea un servicio de tipo «MiServicio», cuyo nombre es «sumar_dos_numeros».
+* La función  ```self.handle_sumar ``` se ejecutará cuando se reciba una solicitud del cliente. Esta función, definida a continuación, realiza una suma que se guarda en  ```response.suma ```, de los argumentos  ```request.a ``` y  ```request.b ```, dos números recibidos (campos definidos en el archivo «.srv»). Para terminar la función se imprime un mensaje en el _log_ del nodo y se devuelve el response al cliente.
+* Para terminar este script se declara la función principal de una forma análoga a lo que se mostró en los anteriores componentes: Inicializa la comunicación con ROS 2, se crea (en este caso) una instancia del nodo servidor, se mantiene el nodo activo esperando solicitudes de servicio, y se destruye el nodo y cierra ROS 2 limpiamente al detenerse la ejecución.
+
+### Cliente del servicio
+  service_client.py
+```
+import sys
+import rclpy
+from rclpy.node import Node
+from mi_robot_comunicacion.srv import MiServicio
+class ServiceClient(Node):
+    def __init__(self):
+        super().__init__('service_client')
+        self.client = self.create_client(MiServicio, 'sumar_dos_numeros')
+        while not self.client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Servicio no disponible, esperando...')
+        self.request = MiServicio.Request()
+
+    def send_request(self, a, b):
+        self.request.a = a
+        self.request.b = b
+        future = self.client.call_async(self.request)
+        future.add_done_callback(self.callback)
+
+    def callback(self, future):
+        try:
+            response = future.result()
+            self.get_logger().info(f'Resultado suma: {response.suma}')
+        except Exception as e:
+            self.get_logger().error(f'Error llamando servicio: {e}')
+``` 
+
+#### Explicación del código  
+* Inicialmente se van a realizar una serie de importaciones de librerías, las mismas que se necesitaban en el servidor del servicio.
+* Seguidamente, se define un nodo nuevo para el cliente y se crea el cliente de servicio del tipo «MiServicio», que se conectará al servicio llamado «sumar_dos_numeros». (debe coincidir con el nombre que se le haya dado al servicio en el servidor). 
+* El bucle que sigue espera hasta que el servicio esté disponible. Si no está disponible, imprime un mensaje cada segundo.
+* A continuación, se crea una solicitud vacía que luego se llenará con los valores que se deseen enviar al servidor.
+* En las siguientes líneas se definen dos funciones:
+    * La primera de ellas, ```send_request()```, establece los valores a y b de la solicitud, llama al servicio de forma asíncrona, y usa un _callback_ para manejar la respuesta cuando llegue.
+    * La segunda función implementa el _callback_, la función que se ejecuta cuando se recibe la respuesta del servicio. Además, imprime el resultado de la suma (```response.suma```) o un error si hubo un problema.
+* Para terminar, la función _main_ realiza las siguientes acciones:
+    * Inicializa el entorno de ROS 2 y crea una instancia del cliente.
+    * Comprueba que el usuario haya pasado exactamente dos argumentos (los números a sumar a en este ejemplo). Si no, muestra un mensaje que explique el uso del servicio.
+    * Toma los números desde los argumentos y envía la solicitud al servicio y lo devuelve.
+    * Si el servicio se ha empleado bien (se han enviado dos argumentos), continúa la ejecución, manteniendo el nodo activo para recibir la respuesta, y después de recibir la respuesta, destruye el nodo y cierra ROS 2 correctamente.
 
 
 [← Volver atrás](Readme.md)
