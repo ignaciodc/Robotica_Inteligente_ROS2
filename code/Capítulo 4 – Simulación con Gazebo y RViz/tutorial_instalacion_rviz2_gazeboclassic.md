@@ -6,7 +6,7 @@ Las versiones que se van a proponer, Rviz 2 y Gazebo Classic, que pertenece a la
 
   - Ejecute ```source /opt/ros/humble/setup.bash ```
   
-**2.	Actualización del sistema **
+**2.	Actualización del sistema**
 
   - Ejecute ```sudo apt update```
   
@@ -29,7 +29,7 @@ Las versiones que se van a proponer, Rviz 2 y Gazebo Classic, que pertenece a la
   - Arranque de Gazebo desde ROS 2 con ```ros2 launch gazebo_ros gazebo.launch.py```
       - Esto garantiza: Gazebo use el tiempo simulado, _plugins_ ROS activos, integración con ROS 2 completa
     
-**7.	Comprobación de la integración ROS–Gazebo **
+**7.	Comprobación de la integración ROS–Gazebo**
   - Con Gazebo en ejecución, abre otra terminal y ejecute:``` ros2 topic list```. Si aparece el tópico ```/clock``` la integración entre Gazebo y ROS 2 es correcta.
 
 
