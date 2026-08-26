@@ -141,7 +141,7 @@ if __name__ == '__main__':
     main()
    ```
 
-####Explicación del código
+#### Explicación del código
 
 * En primer lugar, se van a importar las librerías necesarias para ejecutar este componente. Destacar en este sentido que se debe importar el archivo «.srv» del servicio que contiene la descripción del mismo, y que más adelante se abordará su contenido.
 * Seguidamente, se declara una clase que herede de _Node_, como se ha realizado en los anteriores componentes- Se crea un nodo nuevo para el servicio servidor.
