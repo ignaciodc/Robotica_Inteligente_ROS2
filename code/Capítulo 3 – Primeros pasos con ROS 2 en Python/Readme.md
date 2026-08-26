@@ -7,5 +7,6 @@ En este capítulo se abordan las tareas más comunes e importantes a desarrollar
 * Ejemplo completo: publicador, suscriptor, acción y servicio con Python
 
 
+### Esquema de funcionamiento de un proyecto en ROS 2
 
 <img width="747" height="319" alt="image" src="https://github.com/user-attachments/assets/58cd3362-51d8-4a64-8726-2a7a762f2c7b" />
