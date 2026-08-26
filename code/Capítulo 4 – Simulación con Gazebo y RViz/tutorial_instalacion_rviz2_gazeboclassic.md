@@ -20,8 +20,8 @@ Las versiones que se van a proponer, Rviz 2 y Gazebo Classic, que pertenece a la
   
 **5.	Instalación de Gazebo Classic (Gazebo 11) con integración ROS**
 
-  Ejecute ```sudo apt install ros-humble-gazebo-ros-pkgs```
-    Este paquete instala: Gazebo versión 11, _plugins gazebo_ros_, soporte para actuadores y sensors simulados, publicación de tiempo simulado ``` /clock```
+  - Ejecute ```sudo apt install ros-humble-gazebo-ros-pkgs```
+      - Este paquete instala: Gazebo versión 11, _plugins gazebo_ros_, soporte para actuadores y sensors simulados, publicación de tiempo simulado ``` /clock```
     
 **6.	Verificación de Gazebo Classic**
 
