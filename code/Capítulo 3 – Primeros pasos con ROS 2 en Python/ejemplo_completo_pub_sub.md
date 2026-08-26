@@ -67,14 +67,6 @@ if __name__ == '__main__':
     main()
 ```
 
-### Explicación del código
-Se ha tomado un publicador similar al que se ha empleado cuando se ha explicado el **[Cliente rclpy](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%203%20%E2%80%93%20Primeros%20pasos%20con%20ROS%202%20en%20Python/cliente%20rclpy.md)**
-Las acciones del _main_ suelen ser comunes en casi todos los elementos, a menos que se compliquen algo con hilos o excepciones. Así, el _main_ tiene la siguiente secuencia:
-* Inicializa ROS 2.
-* Crea el nodo _PublisherNode_.
-* Entra en un bucle (_loop_) que mantiene el nodo activo (_rclpy.spin()_).
-* Al cerrar el nodo, se destruye y ROS se apaga.
-
 ## Suscriptor
 **_subscriber_node.py_**
 
@@ -100,15 +92,6 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
-
-### Explicación del código
-* Una vez definidas las librerías que se necesitan y se declaran las clases necesarias, como ya se ha visto anteriormente, se crea una suscripción incluyendo el tipo de dato que se va a recibir, el nombre del tópico (tiene que coincidir con el nombre del tópico que se escribió en el publicador), una función que se ejecutará cada vez que llegue un mensaje por el canal del tópico indicado ( ```self.listener_callback ```), y el tamaño de la cola de recepción de mensajes por si se reciben ráfagas de datos. 
-* Seguidamente, se definirá la función que se ejecutará cada vez que se reciba un dato. En este caso se va a imprimir el mensaje recibido en la consola (_msg.data_) con un log tipo «info».
-* Por último, la función _main_, en la última parte del código, al igual que en el publicado será común a la mayoría de los nodos suscriptores, con las mismas excepciones que se han comentado en el publicador. Las acciones que se realizarán en cualquier caso serán las siguientes:
-    * Inicializa ROS 2.
-    * Crea el nodo SubscriberNode.
-    * Entra en un bucle (_loop_) que mantiene el nodo activo (_rclpy.spin()_).
-    * Al cerrar el nodo, se destruye y ROS se apaga.
 
 ## Servicio
 
@@ -141,14 +124,6 @@ if __name__ == '__main__':
     main()
    ```
 
-#### Explicación del código
-
-* En primer lugar, se van a importar las librerías necesarias para ejecutar este componente. Destacar en este sentido que se debe importar el archivo «.srv» del servicio que contiene la descripción del mismo, y que más adelante se abordará su contenido.
-* Seguidamente, se declara una clase que herede de _Node_, como se ha realizado en los anteriores componentes- Se crea un nodo nuevo para el servicio servidor.
-* A continuación, se crea un servicio de tipo «MiServicio», cuyo nombre es «sumar_dos_numeros».
-* La función  ```self.handle_sumar``` se ejecutará cuando se reciba una solicitud del cliente. Esta función, definida a continuación, realiza una suma que se guarda en  ```response.suma ```, de los argumentos  ```request.a ``` y  ```request.b```, dos números recibidos (campos definidos en el archivo «.srv»). Para terminar la función se imprime un mensaje en el _log_ del nodo y se devuelve el response al cliente.
-* Para terminar este script se declara la función principal de una forma análoga a lo que se mostró en los anteriores componentes: Inicializa la comunicación con ROS 2, se crea (en este caso) una instancia del nodo servidor, se mantiene el nodo activo esperando solicitudes de servicio, y se destruye el nodo y cierra ROS 2 limpiamente al detenerse la ejecución.
-
 ### Cliente del servicio
 **_service_client.py_**
 ```
@@ -177,20 +152,6 @@ class ServiceClient(Node):
         except Exception as e:
             self.get_logger().error(f'Error llamando servicio: {e}')
 ``` 
-
-#### Explicación del código  
-* Inicialmente se van a realizar una serie de importaciones de librerías, las mismas que se necesitaban en el servidor del servicio.
-* Seguidamente, se define un nodo nuevo para el cliente y se crea el cliente de servicio del tipo «MiServicio», que se conectará al servicio llamado «sumar_dos_numeros». (debe coincidir con el nombre que se le haya dado al servicio en el servidor). 
-* El bucle que sigue espera hasta que el servicio esté disponible. Si no está disponible, imprime un mensaje cada segundo.
-* A continuación, se crea una solicitud vacía que luego se llenará con los valores que se deseen enviar al servidor.
-* En las siguientes líneas se definen dos funciones:
-    * La primera de ellas, ```send_request()```, establece los valores a y b de la solicitud, llama al servicio de forma asíncrona, y usa un _callback_ para manejar la respuesta cuando llegue.
-    * La segunda función implementa el _callback_, la función que se ejecuta cuando se recibe la respuesta del servicio. Además, imprime el resultado de la suma (```response.suma```) o un error si hubo un problema.
-* Para terminar, la función _main_ realiza las siguientes acciones:
-    * Inicializa el entorno de ROS 2 y crea una instancia del cliente.
-    * Comprueba que el usuario haya pasado exactamente dos argumentos (los números a sumar a en este ejemplo). Si no, muestra un mensaje que explique el uso del servicio.
-    * Toma los números desde los argumentos y envía la solicitud al servicio y lo devuelve.
-    * Si el servicio se ha empleado bien (se han enviado dos argumentos), continúa la ejecución, manteniendo el nodo activo para recibir la respuesta, y después de recibir la respuesta, destruye el nodo y cierra ROS 2 correctamente.
 
 
 ##	Acción
@@ -251,21 +212,9 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
-#### Explicación del código
-
-* En primer lugar, se van a importar las librerías necesarias para ejecutar este componente. Destacar en este sentido que se debe importar el archivo «.action» de la acción que contiene la descripción de la misma, y que más adelante se abordará su contenido.
-* Seguidamente, como en otros componentes, se define y se crea el nodo que actuará como servidor de la acción. A continuación, se crea un servidor de acciones:
-    * **MiTarea**: tipo de acción personalizada que se requiere en esta ocasión.
-    * **'mi_tarea'**: nombre del tópico de acción.
-    * **_execute_callback_**: función que ejecutará la acción cuando se reciba una meta (_goal_).
-* A continuación se implementa la función ```execute_callback```. Esta función se ejecuta cuando el servidor recibe una nueva meta (_goal_) desde un cliente. Cuando esto sucede, imprime que comenzó a ejecutar la acción, extrae el dato de entrada enviado por el cliente (```goal_data```), campo viene del archivo «.action», y se crean instancias para: _Feedback_, que informa del progreso, y _Result_, que devolverá el resultado final.
-* Se implementa un bucle, seguidamente, simulando las acciones o pasos (10 pasos, 10 iteraciones) que se deberían hacer para lograr el objetivo. Así, en cada pasada del bucle se comprueba primero que el usuario no haya cancelado. Si así fuera, se suprime la meta por donde esté, se informa por consola y se devuelve el resultado vacío. Si no se cancela, se avanza el porcentaje que se estime en la tarea, y se espera un tiempo que sería la tarea a realizar (en un caso real por ejemplo podría ser la publicación en un tópico ```/cmd_vel```, la velocidad de un motor, con ayuda de _encoders_ y sensores). En el ejemplo se implementa la función sleep, que simula la tarea en tiempo real haciendo un _delay_ o una parada, un tiempo en concreto, sin hacer nada. 
-* Una vez acabada la acción (termina la ejecución del bucle) se almacenará el resultado final en la variable result, se marca la acción como exitosa y se devuelve el resultado.
-* La función principal implementa una serie de tareas similares a la de componentes anteriores: inicializa ROS 2, ejecuta el servidor, lo mantiene activo, y lo destruye al finalizar (por ejemplo, con Ctrl+C).
 
 ### Cliente de la acción
 En esta ocasión, en el código que se ofrece a continuación, podrá observar el código propuesto de ejemplo para implementar el cliente de una acción en un proyecto de ROS 2.
-
      
 **_action_client.py_**
 ```
