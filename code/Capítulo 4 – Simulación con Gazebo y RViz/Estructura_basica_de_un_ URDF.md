@@ -1,7 +1,7 @@
 ## Estructura básica de un URDF
 
 Un URDF típico se estructura como:
-
+```
 <robot name="mi_robot">
     <link name="base_link">
         <visual> ... </visual>
@@ -20,14 +20,15 @@ Un URDF típico se estructura como:
         ...
     </link>
 </robot>
+```
 Los elementos clave del código anterior son los siguientes:
-•	Link
-	visual: representación gráfica.
-	collision: volumen geométrico utilizado para colisiones.
-	inertial: masa, centro de masa y tensor de inercia.
-•	Joint
-	type: continuous, revolute, prismatic, fixed, planar.
-	axis: eje del movimiento.
-	origin: posición de la articulación respecto al padre.
-	limit: velocidad, esfuerzo y ángulos.
+* **Link**
+    * **_visual_**: representación gráfica.
+    * **_collision_**: volumen geométrico utilizado para colisiones.
+    * **_inertial_**: masa, centro de masa y tensor de inercia.
+* **Joint**
+    * **_type_**: continuous, revolute, prismatic, fixed, planar.
+    * **_axis_**: eje del movimiento.
+    * **_origin_**: posición de la articulación respecto al padre.
+    * **_limit_**: velocidad, esfuerzo y ángulos.
 
