@@ -39,9 +39,9 @@ Seguidamente se va a mostrar y explicar el código de cada uno de los archivos q
 
 
 ## Publicador
-
+*_publisher_node.py_*
 ```
-_publisher_node.py_
+
 
 import rclpy
 from rclpy.node import Node
