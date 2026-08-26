@@ -5,6 +5,6 @@ Este Capítulo establece una introducción a la robótica actual, y al sistema R
 
 
 <p align="center"> <img width="512" height="768" alt="Figura 1 2" src="https://github.com/user-attachments/assets/ccdd1ca1-1e48-417f-98f4-af8a2caf0b7c" /> 
-<sub><b>Diagrama conceptual de arquitectura ROS 2</sub> </b></p>
+<sub><b>Diagrama conceptual de arquitectura ROS 2 </b></sub> </p>
 
 
