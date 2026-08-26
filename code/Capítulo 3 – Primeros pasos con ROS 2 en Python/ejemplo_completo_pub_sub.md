@@ -143,11 +143,11 @@ if __name__ == '__main__':
 * En primer lugar, se van a importar las librerías necesarias para ejecutar este componente. Destacar en este sentido que se debe importar el archivo «.srv» del servicio que contiene la descripción del mismo, y que más adelante se abordará su contenido.
 * Seguidamente, se declara una clase que herede de _Node_, como se ha realizado en los anteriores componentes- Se crea un nodo nuevo para el servicio servidor.
 * A continuación, se crea un servicio de tipo «MiServicio», cuyo nombre es «sumar_dos_numeros».
-* La función  ```self.handle_sumar ``` se ejecutará cuando se reciba una solicitud del cliente. Esta función, definida a continuación, realiza una suma que se guarda en  ```response.suma ```, de los argumentos  ```request.a ``` y  ```request.b ```, dos números recibidos (campos definidos en el archivo «.srv»). Para terminar la función se imprime un mensaje en el _log_ del nodo y se devuelve el response al cliente.
+* La función  ```self.handle_sumar``` se ejecutará cuando se reciba una solicitud del cliente. Esta función, definida a continuación, realiza una suma que se guarda en  ```response.suma ```, de los argumentos  ```request.a ``` y  ```request.b```, dos números recibidos (campos definidos en el archivo «.srv»). Para terminar la función se imprime un mensaje en el _log_ del nodo y se devuelve el response al cliente.
 * Para terminar este script se declara la función principal de una forma análoga a lo que se mostró en los anteriores componentes: Inicializa la comunicación con ROS 2, se crea (en este caso) una instancia del nodo servidor, se mantiene el nodo activo esperando solicitudes de servicio, y se destruye el nodo y cierra ROS 2 limpiamente al detenerse la ejecución.
 
 ### Cliente del servicio
-  service_client.py
+**_service_client.py_**
 ```
 import sys
 import rclpy
