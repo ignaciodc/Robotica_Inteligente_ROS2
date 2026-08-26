@@ -2,7 +2,10 @@
 
 A continuación se definen y se muestra el código de los elementos fundamentales de ROS 2. Los ejemplos enunciados se refieren al siguiente esquema:
 
-<img width="512" height="7686" alt="Figura 1 2" src="https://github.com/user-attachments/assets/be8cad95-fc9d-49a4-ab6e-6429cc14d71d" />
+<p align="center">
+  <img width="512" height="768" alt="Figura 1 2" src="https://github.com/user-attachments/assets/ccdd1ca1-1e48-417f-98f4-af8a2caf0b7c" /><br>
+  <sub><b>Figura 1.2:</b> Descripción o leyenda de la imagen aquí.</sub>
+</p>
 
 
 
