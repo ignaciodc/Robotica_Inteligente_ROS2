@@ -3,5 +3,7 @@
 A continuación se mi
 
 
-<img width="229" height="523" alt="image" src="https://github.com/user-attachments/assets/2f084d2a-79d4-49f5-bb16-57e98b3744dd" />
+<p align="center">
+<img width="229" height="523" alt="image" src="https://github.com/user-attachments/assets/5746a4ce-ee6f-43eb-a543-52b36ea129e6" /> 
+<sub><b>Diagrama de flujo de simulación y control de un robot en ROS 2 con Gazebo </b></sub> </p>
 
