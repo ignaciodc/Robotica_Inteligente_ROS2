@@ -193,4 +193,131 @@ class ServiceClient(Node):
     * Si el servicio se ha empleado bien (se han enviado dos argumentos), continúa la ejecución, manteniendo el nodo activo para recibir la respuesta, y después de recibir la respuesta, destruye el nodo y cierra ROS 2 correctamente.
 
 
+##	Acción
+Al igual que los servicios, se requiere implementar un servidor de acciones (_Action Server_), y un cliente de acciones (_Action Client_). Sin embargo, a diferencia de los servicios, las acciones son útiles para tareas que toman tiempo y requieren retroalimentación periódica, con posibilidad de cancelación y un resultado final.
+
+### Servidor de la acción
+*_action_server.py_*
+
+``` 
+import rclpy
+from rclpy.node import Node
+from rclpy.action import ActionServer
+from mi_robot_comunicacion.action import MiTarea
+
+class ActionServerNode(Node):
+    def __init__(self):
+        super().__init__('action_server_node')
+        self._action_server = ActionServer(
+            self,
+            MiTarea,
+            'mi_tarea',
+            execute_callback=self.execute_callback)
+
+    def execute_callback(self, goal_handle):
+        self.get_logger().info('Ejecutando accion...')
+        goal_data = goal_handle.request.goal_data
+        feedback_msg = MiTarea.Feedback()
+        result = MiTarea.Result()
+
+
+        for i in range(1, 11):
+            if goal_handle.is_cancel_requested:
+                goal_handle.canceled()
+                self.get_logger().info('Accion cancelada')
+                return MiTarea.Result()
+
+            feedback_msg.porcentaje_avance = i * 10.0
+            goal_handle.publish_feedback(feedback_msg)
+            self.get_logger().info(f'Progreso: {feedback_msg.porcentaje_avance}%')
+            self.sleep_some_time()
+
+        result.resultado_final = f' completada con goal_data={goal_data}'
+        goal_handle.succeed()
+        return result
+
+    def sleep_some_time(self):
+        # Simula tiempo de procesamiento
+        import time
+        time.sleep(0.5)
+
+def main(args=None):
+    rclpy.init(args=args)
+    action_server = ActionServerNode()
+    rclpy.spin(action_server)
+    action_server.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+```
+#### Explicación del código
+
+* En primer lugar, se van a importar las librerías necesarias para ejecutar este componente. Destacar en este sentido que se debe importar el archivo «.action» de la acción que contiene la descripción de la misma, y que más adelante se abordará su contenido.
+* Seguidamente, como en otros componentes, se define y se crea el nodo que actuará como servidor de la acción. A continuación, se crea un servidor de acciones:
+    * **MiTarea**: tipo de acción personalizada que se requiere en esta ocasión.
+    * **'mi_tarea'**: nombre del tópico de acción.
+    * **_execute_callback_**: función que ejecutará la acción cuando se reciba una meta (_goal_).
+* A continuación se implementa la función ```execute_callback```. Esta función se ejecuta cuando el servidor recibe una nueva meta (_goal_) desde un cliente. Cuando esto sucede, imprime que comenzó a ejecutar la acción, extrae el dato de entrada enviado por el cliente (```goal_data```), campo viene del archivo «.action», y se crean instancias para: _Feedback_, que informa del progreso, y _Result_, que devolverá el resultado final.
+* Se implementa un bucle, seguidamente, simulando las acciones o pasos (10 pasos, 10 iteraciones) que se deberían hacer para lograr el objetivo. Así, en cada pasada del bucle se comprueba primero que el usuario no haya cancelado. Si así fuera, se suprime la meta por donde esté, se informa por consola y se devuelve el resultado vacío. Si no se cancela, se avanza el porcentaje que se estime en la tarea, y se espera un tiempo que sería la tarea a realizar (en un caso real por ejemplo podría ser la publicación en un tópico ```/cmd_vel```, la velocidad de un motor, con ayuda de _encoders_ y sensores). En el ejemplo se implementa la función sleep, que simula la tarea en tiempo real haciendo un _delay_ o una parada, un tiempo en concreto, sin hacer nada. 
+* Una vez acabada la acción (termina la ejecución del bucle) se almacenará el resultado final en la variable result, se marca la acción como exitosa y se devuelve el resultado.
+* La función principal implementa una serie de tareas similares a la de componentes anteriores: inicializa ROS 2, ejecuta el servidor, lo mantiene activo, y lo destruye al finalizar (por ejemplo, con Ctrl+C).
+
+### Cliente de la acción
+En esta ocasión, en el código que se ofrece a continuación, podrá observar el código propuesto de ejemplo para implementar el cliente de una acción en un proyecto de ROS 2.
+
+     
+**_action_client.py_**
+```
+import rclpy
+from rclpy.node import Node
+from rclpy.action import ActionClient
+from mi_robot_comunicacion.action import MiTarea
+class ActionClientNode(Node):
+
+    def __init__(self):
+        super().__init__('action_client_node')
+        self._action_client = ActionClient(self, MiTarea, 'mi_tarea')
+
+    def send_goal(self, goal_data):
+        self._action_client.wait_for_server()
+        goal_msg = MiTarea.Goal()
+        goal_msg.goal_data = goal_data
+        self._send_goal_future = self._action_client.send_goal_async(
+            goal_msg,
+            feedback_callback=self.feedback_callback)     
+       self._send_goal_future.add_done_callback(self.goal_response_callback) 
+     
+        
+    def goal_response_callback(self, future):
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.get_logger().info('Objetivo rechazado :(')
+            return
+
+        self.get_logger().info('Objetivo aceptado :)')
+        self._get_result_future = goal_handle.get_result_async()
+   self._get_result_future.add_done_callback(self.get_result_callback)
+
+    def feedback_callback(self, feedback_msg):
+        feedback = feedback_msg.feedback
+        self.get_logger().info(f'Feedback recibido: {feedback.porcentaje_avance}%')
+
+    def get_result_callback(self, future):
+        result = future.result().result
+        self.get_logger().info(f'Resultado final: {result.resultado_final}')
+
+def main(args=None):
+    rclpy.init(args=args)
+    action_client = ActionClientNode()
+    action_client.send_goal(42)
+    rclpy.spin(action_client)
+    action_client.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+```
+
+
 [← Volver atrás](Readme.md)
