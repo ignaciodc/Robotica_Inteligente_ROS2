@@ -1,4 +1,4 @@
-## Ejemplo: sensor LIDAR 2D simulado
+## Diseño del sensor Lidar 2D en Gazebo
 Este ejemplo se corresponde a la Sección 4.4.2.2. Uno de los sensores más utilizados en robótica móvil es el LIDAR 2D. En Gazebo, se implementa mediante un sensor de tipo ray.
 ```
 <gazebo reference="lidar_link">
