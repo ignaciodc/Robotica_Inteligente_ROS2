@@ -1,7 +1,7 @@
 
 ## _ros2_control_ — Interfaces de hardware
 
-Según el esquema de funcionamiento de la simulación: _ros2_control_ actuará de puente entre el modelo y el control traduciendo los _joints_ del URDF en interfaces de control. 
+El código de esta fichero se puede encontrar en la Sección 4.5.2. del libro. Según el esquema de funcionamiento de la simulación: _ros2_control_ actuará de puente entre el modelo y el control traduciendo los _joints_ del URDF en interfaces de control. 
 
 
 ```
