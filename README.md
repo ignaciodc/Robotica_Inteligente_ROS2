@@ -55,7 +55,7 @@ El material sigue la estructura del libro:
 - **Capítulo 9 – Integración de LangChain con ROS2**
 - **Capítulo 10 – Agentes inteligentes con LLMs en Robótica**
 
-Cada carpeta incluye su propio `README.md` explicativo cuando es necesario.
+Cada carpeta incluye su propio `README.md`.
 
 ---
 
