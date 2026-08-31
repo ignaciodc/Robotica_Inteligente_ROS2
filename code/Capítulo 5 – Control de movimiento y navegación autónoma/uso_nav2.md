@@ -1,5 +1,11 @@
 ## 5.2.3.	Uso básico de Nav2 desde Python
 
+Aunque Nav2 se configura principalmente mediante archivos YAML y launch files, es habitual interactuar con él desde nodos Python para:
+* Enviar objetivos de navegación.
+*	Cancelar o modificar rutas.
+*	Supervisar el estado del robot.
+
+
 
 ```from nav2_simple_commander.robot_navigator import BasicNavigator
 import rclpy
