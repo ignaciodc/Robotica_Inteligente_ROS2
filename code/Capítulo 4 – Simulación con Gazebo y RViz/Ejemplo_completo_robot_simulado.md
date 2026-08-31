@@ -11,9 +11,6 @@ Según el diagrama de flujo de simulación y control de un robot en ROS 2 con Ga
 * **[_ros2_control_ — Interfaces de hardware](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/Interfaces_de_hardware.md)**
 * **[Controlador — _diff_drive_controller_](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/Controlador.md)** 
 * **[Gazebo - Simulador](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/gazebo_simu.md)**
-
-* Dinámica simulada — Resultado físico
-
-
+* **[Dinámica simulada — Resultado físico](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/edit/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/dinamica_simu.md)**
 
 [← Volver atrás](Readme.md)
