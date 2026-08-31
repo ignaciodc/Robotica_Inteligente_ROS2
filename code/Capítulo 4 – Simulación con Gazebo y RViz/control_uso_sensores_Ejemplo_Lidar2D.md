@@ -1,5 +1,5 @@
 ## Control y uso de sensores desde Python. Ejemplo: sensor LIDAR 2D simulado
-Desde el punto de vista del desarrollador, un sensor simulado se utiliza exactamente igual que uno real. Por ejemplo, para leer datos de un LIDAR en Python. Este ejemplo se puede encontrar en la Sección 4.4.2.2.:
+Desde el punto de vista del desarrollador, un sensor simulado se utiliza exactamente igual que uno real. Por ejemplo, para leer datos de un LIDAR en Python. Este ejemplo se puede encontrar en la Sección 4.4.3.:
 
 ```
 import rclpy
