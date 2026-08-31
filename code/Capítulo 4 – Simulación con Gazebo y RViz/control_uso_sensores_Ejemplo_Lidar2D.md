@@ -21,4 +21,4 @@ class LidarNode(Node):
 ```
 
 
-[← Volver atrás](../Readme.md)
+[← Volver atrás](/Readme.md)
