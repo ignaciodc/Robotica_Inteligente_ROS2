@@ -1,7 +1,7 @@
 ## 5.2.3.	Uso básico de Nav2 desde Python
 
 
-`from nav2_simple_commander.robot_navigator import BasicNavigator
+```from nav2_simple_commander.robot_navigator import BasicNavigator
 import rclpy
 
 rclpy.init()
@@ -14,4 +14,4 @@ navigator.goToPose(pose)
 while not navigator.isTaskComplete():
 rclpy.spin_once(navigator)
 rclpy.shutdown()
-`
+```
