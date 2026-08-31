@@ -21,3 +21,4 @@ Según el esquema de funcionamiento de la simulación: _ros2_control_ actuará d
   </joint>
 </ros2_control>
 ```
+[← Volver atrás](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/Ejemplo_completo_robot_simulado.md)
