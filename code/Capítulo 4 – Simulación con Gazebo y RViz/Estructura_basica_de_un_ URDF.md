@@ -31,4 +31,7 @@ Los elementos clave del código anterior son los siguientes:
     * **_axis_**: eje del movimiento.
     * **_origin_**: posición de la articulación respecto al padre.
     * **_limit_**: velocidad, esfuerzo y ángulos.
+ 
+
+[← Volver atrás](Readme.md)
 
