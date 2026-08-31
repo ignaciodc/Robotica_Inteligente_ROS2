@@ -8,7 +8,7 @@
 Según el diagrama de flujo de simulación y control de un robot en ROS 2 con Gazebo, los pasos que se tienen que dar son los siguientes:
 
 * **[URDF (modelo del robot)](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/modelo_robot_URDF.md)**
-* ros2_control — Interfaces de hardware
+* **[_ros2_control_ — Interfaces de hardware](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/edit/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/Interfaces%20de%20hardware.md)** 
 * Controlador — diff_drive_controller
 * Dinámica simulada — Resultado físico
 
