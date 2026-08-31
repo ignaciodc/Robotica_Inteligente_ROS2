@@ -8,21 +8,6 @@ En este capítulo abordamos los siguientes aspectos:
 * **[Ejemplo completo de un robot simulado](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/Ejemplo_completo_robot_simulado.md)**
 
 
-4.3.2.2.	
-
-4.5.	
-  4.5.1.	URDF (modelo del robot)
-  4.5.2.	ros2_control — Interfaces de hardware
-  4.5.3.	Controlador — diff_drive_controller
-  4.5.5.	Dinámica simulada — Resultado físico
-
-
-
-
-
-
-
-
 
 
 
