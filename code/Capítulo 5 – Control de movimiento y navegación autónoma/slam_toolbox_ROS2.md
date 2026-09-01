@@ -51,6 +51,12 @@ Este archivo permite:
 * Activar el uso de tiempo simulado (```/clock```).
 * Integrar slam_toolbox en un launch más amplio que incluya Gazebo y Nav2.
 
+<p align="center">
+<img width="744" height="268" alt="image" src="https://github.com/user-attachments/assets/8b8dd18d-6f7f-4529-914a-39b25af364b6" />
+<sub><b>Evolución del mapa 2D creado por _slam_toolbox_ mientras se desplaza el robot.</b></sub> </p>
+
+
+
 
 [← Volver atrás](Readme.md)
 
