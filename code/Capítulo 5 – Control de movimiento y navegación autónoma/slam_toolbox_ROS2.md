@@ -1,6 +1,11 @@
 ## _slam_toolbox_ en ROS 2
 
+
+<p align="center">
 <img width="715" height="431" alt="image" src="https://github.com/user-attachments/assets/35dcac56-790d-4673-80aa-5583e6946dc6" />
+<sub><b>Mapa 2D generado mediante SLAM</b></sub> </p>
+
+
 
 En ROS 2, una de las soluciones más utilizadas y recomendadas para SLAM 2D es slam_toolbox, un paquete desarrollado específicamente para el ecosistema ROS 2. Este paquete implementa algoritmos de SLAM basados en grafos, ofreciendo un equilibrio adecuado entre precisión, robustez y facilidad de uso. Este código de ejemplo se encuentra en la Sección 5.3.1.4 del libro.
 
