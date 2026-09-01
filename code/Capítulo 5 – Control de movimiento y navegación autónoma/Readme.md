@@ -7,3 +7,4 @@ El control de movimiento y la navegación autónoma constituyen uno de los pilar
 
 * **[Ejemplo práctico: Localización del robot mediante AMCL en ROS 2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%205%20%E2%80%93%20Control%20de%20movimiento%20y%20navegaci%C3%B3n%20aut%C3%B3noma/ejemplo_AMCL.md)**
   
+[← Volver atrás](../../README.md)
