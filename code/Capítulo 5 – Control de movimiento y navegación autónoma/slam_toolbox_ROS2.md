@@ -40,9 +40,9 @@ def generate_launch_description():
     ])
 ```
 Este archivo permite:
-•	Activar el uso de tiempo simulado (/clock).
-•	Integrar slam_toolbox en un launch más amplio que incluya Gazebo y Nav2.
+* Activar el uso de tiempo simulado (```/clock```).
+* Integrar slam_toolbox en un launch más amplio que incluya Gazebo y Nav2.
 
 
 
-´´´
+
