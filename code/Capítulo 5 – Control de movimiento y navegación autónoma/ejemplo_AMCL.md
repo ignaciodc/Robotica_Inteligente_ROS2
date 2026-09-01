@@ -1,5 +1,9 @@
 ## Ejemplo práctico: Localización del robot mediante AMCL en ROS 2
 
+
+<img width="665" height="360" alt="image" src="https://github.com/user-attachments/assets/b9a03a7c-00c4-4703-b1d6-dd3d91e743cf" />
+
+
 El código de este ejemplo se encuentra en la Sección 5.3.2.8 del libro. En este ejemplo se muestra cómo un robot móvil, disponiendo de un mapa previamente generado, es capaz de localizarse de forma autónoma utilizando el algoritmo AMCL. Este escenario representa el caso típico de operación real de un robot de servicio o de navegación autónoma en un entorno conocido. Se asume el siguiente contexto:
 * Robot móvil diferencial.
 * Sensor LIDAR 2D publicando en el tópico /scan.
@@ -73,6 +77,11 @@ def generate_launch_description():
             output='screen')
     ])
 ```
+
+<img width="681" height="364" alt="image" src="https://github.com/user-attachments/assets/bdf4fab1-b482-46f4-abf6-02331318fbf3" />
+
+
+
 
 
 [← Volver atrás](Readme.md)
