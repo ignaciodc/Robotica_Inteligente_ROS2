@@ -6,6 +6,8 @@
 <sub><b>Mapa 2D generado mediante SLAM</b></sub> </p>
 
 
+<br>
+<br>
 
 En ROS 2, una de las soluciones más utilizadas y recomendadas para SLAM 2D es slam_toolbox, un paquete desarrollado específicamente para el ecosistema ROS 2. Este paquete implementa algoritmos de SLAM basados en grafos, ofreciendo un equilibrio adecuado entre precisión, robustez y facilidad de uso. Este código de ejemplo se encuentra en la Sección 5.3.1.4 del libro.
 
@@ -51,6 +53,8 @@ Este archivo permite:
 * Activar el uso de tiempo simulado (```/clock```).
 * Integrar slam_toolbox en un launch más amplio que incluya Gazebo y Nav2.
 
+<br>
+<br>
 <p align="center">
 <img width="744" height="268" alt="image" src="https://github.com/user-attachments/assets/8b8dd18d-6f7f-4529-914a-39b25af364b6" />
 <sub><b>Evolución del mapa 2D creado por _slam_toolbox_ mientras se desplaza el robot.</b></sub> </p>
