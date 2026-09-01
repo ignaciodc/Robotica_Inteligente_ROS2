@@ -4,3 +4,4 @@ La percepción visual constituye uno de los pilares fundamentales de la robótic
 
 
 6.4.	Preprocesamiento de imágenes
+6.5.	Detección básica de objetos con OpenCV
