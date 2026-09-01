@@ -7,6 +7,7 @@
 
 
 <br>
+<br>
 
 El código de este ejemplo se encuentra en la Sección 5.3.2.8 del libro. En este ejemplo se muestra cómo un robot móvil, disponiendo de un mapa previamente generado, es capaz de localizarse de forma autónoma utilizando el algoritmo AMCL. Este escenario representa el caso típico de operación real de un robot de servicio o de navegación autónoma en un entorno conocido. Se asume el siguiente contexto:
 * Robot móvil diferencial.
@@ -81,6 +82,10 @@ def generate_launch_description():
             output='screen')
     ])
 ```
+<br>
+<br>
+
+
 <p align="center">
 <img width="681" height="364" alt="image" src="https://github.com/user-attachments/assets/bdf4fab1-b482-46f4-abf6-02331318fbf3" />
 <sub><b>Convergencia de las partículas de AMCL durante el movimiento del robot</b></sub> </p>
