@@ -6,6 +6,8 @@
 
 
 
+<br>
+
 El código de este ejemplo se encuentra en la Sección 5.3.2.8 del libro. En este ejemplo se muestra cómo un robot móvil, disponiendo de un mapa previamente generado, es capaz de localizarse de forma autónoma utilizando el algoritmo AMCL. Este escenario representa el caso típico de operación real de un robot de servicio o de navegación autónoma en un entorno conocido. Se asume el siguiente contexto:
 * Robot móvil diferencial.
 * Sensor LIDAR 2D publicando en el tópico /scan.
