@@ -6,3 +6,7 @@
 6.4.3.	Normalización y ajuste de contraste
 6.4.4.	Detección de bordes
 6.4.5.	Segmentación de regiones
+
+
+
+[← Volver atrás](Readme.md)
