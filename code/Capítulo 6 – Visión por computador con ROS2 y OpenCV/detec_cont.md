@@ -1,6 +1,8 @@
 ###	Detección de contornos
 
 El código de este apartado se encuentra en la Sección 6.5.2 del libro. La detección de contornos es una técnica clave en visión por computador, que se aplica sobre imágenes binarizadas (por ejemplo, después de segmentación por color o umbralización). Se puede crear un nodo que reciba imágenes de la cámara, aplique segmentación por color y detecte contornos, como puede apreciar en el siguiente código completo para ROS 2, con una estructura similar a la que ya se comentó en capítulos anteriores, junto a las particularidades que se han mostrado en este capítulo:
+
+ ``` 
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -43,4 +45,8 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+ ``` 
 
+
+
+[← Volver atrás](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%206%20%E2%80%93%20Visi%C3%B3n%20por%20computador%20con%20ROS2%20y%20OpenCV/deteccion_objetos.md)
