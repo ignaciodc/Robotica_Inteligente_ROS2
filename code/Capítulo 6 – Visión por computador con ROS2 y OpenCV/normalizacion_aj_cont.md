@@ -11,7 +11,9 @@ import cv2
 gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 # Aplicación de ecualización de histograma
-equalized = cv2.equalizeHist(gray)``` 
+equalized = cv2.equalizeHist(gray)
+
+``` 
 
 
 
