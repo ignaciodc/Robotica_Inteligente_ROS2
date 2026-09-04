@@ -8,7 +8,7 @@ import cv2
 gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 # Aplicación de filtro gaussiano
 blur_gauss = cv2.GaussianBlur(gray, (5, 5), 0)
-
+```
 
 
 
