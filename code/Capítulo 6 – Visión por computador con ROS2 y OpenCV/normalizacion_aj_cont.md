@@ -15,6 +15,15 @@ equalized = cv2.equalizeHist(gray)
 
 ``` 
 
+* **Ajuste de brillo y contraste:**	permite modificar directamente la intensidad de los píxeles y la dispersión de valores, compensando efectos de subexposición o sobreexposición.
+
+``` 
+alpha = 1.2  # Contraste (1.0 = sin cambio)
+beta = 30    # Brillo (0 = sin cambio)
+
+adjusted = cv2.convertScaleAbs(frame, alpha=alpha, beta=beta)
+```
+
 
 
 [← Volver atrás](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%206%20%E2%80%93%20Visi%C3%B3n%20por%20computador%20con%20ROS2%20y%20OpenCV/Preprocesamiento_de_imagenes.md)
