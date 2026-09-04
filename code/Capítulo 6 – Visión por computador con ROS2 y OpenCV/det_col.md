@@ -28,6 +28,7 @@ upper_red = np.array([10, 255, 255])
 
 * **Generación de máscara binaria:** Se crea una máscara binaria, donde los píxeles que caen dentro del rango definido se establecen como blancos (255) y el resto como negros (0). Esto permite aislar las regiones de interés para procesamiento posterior.
 
+ ``` 
 # Creación de la máscara
 mask = cv2.inRange(hsv, lower_red, upper_red)
 
