@@ -1,6 +1,18 @@
 ## Conversión de espacios de color
-6.4.1.
+El código se encuentra en la Sección 6.4.1. Sería el siguiente. Notar que usamos la bien conocida librería OpenCV ```import cv2``` en Python.
+```
+import cv2
 
+# Captura de un frame desde la cámara
+frame = cv2.imread("imagen_robot.png")
+
+# Conversión a escala de grises
+gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+# Conversión a HSV
+hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+
+```
 
 
 
