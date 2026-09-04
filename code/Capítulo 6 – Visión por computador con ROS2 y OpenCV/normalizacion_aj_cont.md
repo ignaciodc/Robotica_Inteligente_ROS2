@@ -1,4 +1,4 @@
-### 6.4.3.	Normalización y ajuste de contraste
+### Normalización y ajuste de contraste
 
 Este código se encuentra en la Sección 6.4.3 del libro. En entornos reales, los cambios de iluminación son frecuentes y afectan significativamente la calidad de la percepción visual de los robots. 
 
