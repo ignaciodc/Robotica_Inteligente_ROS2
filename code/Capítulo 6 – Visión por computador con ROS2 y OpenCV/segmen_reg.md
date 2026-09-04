@@ -3,7 +3,7 @@
 Se encuentra en la Sección 6.4.5 del libro. La segmentación de regiones es una operación fundamental en visión por computador, cuyo objetivo es dividir una imagen en regiones homogéneas que correspondan a objetos o partes relevantes de la escena. Existen varias técnicas ampliamente utilizadas para realizar segmentación, cada una con ventajas y limitaciones según el entorno y la naturaleza de los objetos:
 
 * **Umbralización:** La umbralización es la técnica más simple y consiste en convertir una imagen a binaria en función de un umbral de intensidad.
-* 
+  
 ```
 import cv2
 
