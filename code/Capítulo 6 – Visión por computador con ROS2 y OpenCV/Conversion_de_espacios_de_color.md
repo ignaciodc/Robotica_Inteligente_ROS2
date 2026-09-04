@@ -1,4 +1,4 @@
-## Conversión de espacios de color
+### Conversión de espacios de color
 El código se encuentra en la Sección 6.4.1. Sería el siguiente. Notar que usamos la bien conocida librería OpenCV ```import cv2``` en Python.
 ```
 import cv2
