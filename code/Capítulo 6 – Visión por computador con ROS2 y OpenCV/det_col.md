@@ -3,7 +3,7 @@ Se corresponde con la Sección 6.5.1 del libro. La detección de objetos basada 
 
 * **Conversión a espacio de color HSV:** El espacio HSV (Hue, Saturation, Value) separa la información de color (matiz) de la intensidad luminosa. Esto hace que la detección sea más robusta frente a cambios de iluminación que en RGB/BGR. En este caso el código sería el mismo que se propuso en la Sección 6.4.1 del libro, es decir:
 
-  
+ ```   
 import cv2
 
 # Captura de un frame desde la cámara
@@ -14,10 +14,11 @@ gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 # Conversión a HSV
 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-
+ ``` 
 
 * **Definición de rangos de color:** Se especifica un rango inferior y superior para el matiz, saturación y valor que correspondan al color del objeto a detectar. El código para este paso sería:
 
+ ``` 
 import numpy as np
 
 # Rango de color rojo en HSV
@@ -36,9 +37,11 @@ result = cv2.bitwise_and(frame, frame, mask=mask)
 cv2.imshow("Detección por color", result)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+ ``` 
 
 A continuación, puede observar un ejemplo avanzado en ROS 2, donde un **nodo se puede integrar la detección por color con un suscriptor de cámara y publicar la posición del objeto detectado**:
 
+ ``` 
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -73,6 +76,10 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+ ``` 
 
+
+
+[← Volver atrás](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%206%20%E2%80%93%20Visi%C3%B3n%20por%20computador%20con%20ROS2%20y%20OpenCV/Preprocesamiento_de_imagenes.md)
 
 
