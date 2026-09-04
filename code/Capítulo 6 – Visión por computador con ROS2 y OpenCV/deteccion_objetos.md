@@ -6,6 +6,7 @@ Este contenido se corresponde a la Sección 6.5 del libro. La detección de obje
 6.5.2.	Detección de contornos
 
   <br>
+  
   [← Volver atrás](Readme.md)
 
 
