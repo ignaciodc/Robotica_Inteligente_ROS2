@@ -2,7 +2,7 @@
 ## Ejemplo de código TensorFlow integrado en ROS 2
 
 
-Este ejemplo se encuentra en la Sección 7.2.2.5 del libro. A continuación, se muestra un ejemplo completo de código en Python empleando Pytorch con integración en ROS 2. Este código implementa un nodo ROS 2 en Python que utiliza un modelo de detección de objetos preentrenado en TensorFlow para procesar imágenes procedentes de una cámara y extraer información semántica sobre los objetos detectados en la escena.
+Este ejemplo, y su explicación paso a paso, se encuentra en la Sección 7.2.2.5 del libro. A continuación, se muestra un ejemplo completo de código en Python empleando Pytorch con integración en ROS 2. Este código implementa un nodo ROS 2 en Python que utiliza un modelo de detección de objetos preentrenado en TensorFlow para procesar imágenes procedentes de una cámara y extraer información semántica sobre los objetos detectados en la escena.
 
 ```
 import rclpy
