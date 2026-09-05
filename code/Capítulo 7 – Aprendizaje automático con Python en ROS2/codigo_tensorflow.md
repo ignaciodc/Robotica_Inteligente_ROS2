@@ -26,3 +26,9 @@ class ObjectDetector(Node):
         # Cargar modelo SSD preentrenado
         self.model = tf.saved_model.load('ssd_mobilenet_v2_fpnlite_320x320/saved_model')
 ```
+
+  <br>
+  
+  [← Volver atrás](Readme.md)
+
+
