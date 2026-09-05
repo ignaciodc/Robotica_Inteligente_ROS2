@@ -9,3 +9,4 @@ El aprendizaje automático (Machine Learning, ML) se ha consolidado como una her
 
 
 7.2.2.5.	Ejemplo de código TensorFlow integrado en ROS 2
+https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%207%20%E2%80%93%20Aprendizaje%20autom%C3%A1tico%20con%20Python%20en%20ROS2/codigo_tensorflow.md
