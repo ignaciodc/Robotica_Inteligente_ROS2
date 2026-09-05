@@ -8,3 +8,4 @@ El aprendizaje automático (Machine Learning, ML) se ha consolidado como una her
 
 
 
+7.2.2.5.	Ejemplo de código TensorFlow integrado en ROS 2
