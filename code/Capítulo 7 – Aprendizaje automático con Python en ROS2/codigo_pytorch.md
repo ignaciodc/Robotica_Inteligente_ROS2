@@ -1,7 +1,7 @@
 ## 7.2.1.5.	Ejemplo de código Pytorch integrado en ROS 2
 Este ejemplo, y su explicación paso a paso, se encuentra en la Sección 7.2.1.5 del libro. A continuación, se muestra un ejemplo completo de código en Python empleando Pytorch con integración en ROS 2 para clasificación de imágenes.
 
-
+```
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -53,3 +53,9 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+
+```
+
+  <br>
+  
+  [← Volver atrás](Readme.md)
