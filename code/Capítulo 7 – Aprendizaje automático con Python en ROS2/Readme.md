@@ -7,11 +7,11 @@ El aprendizaje automático (Machine Learning, ML) se ha consolidado como una her
 <sub><b>Ejemplo de arquitectura de integración de TensorFlow en ROS 2  </b></sub> </p>
 
 
-
+<br>
 * **[Ejemplo de código Pytorch integrado en ROS 2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%207%20%E2%80%93%20Aprendizaje%20autom%C3%A1tico%20con%20Python%20en%20ROS2/codigo_pytorch.md)**
 * **[Ejemplo de código TensorFlow integrado en ROS 2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%207%20%E2%80%93%20Aprendizaje%20autom%C3%A1tico%20con%20Python%20en%20ROS2/codigo_tensorflow.md)**
 
-
+<br>
 
 
 [← Volver atrás](Readme.md)
