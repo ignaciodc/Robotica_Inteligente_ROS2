@@ -1,4 +1,4 @@
-## 7.2.1.5.	Ejemplo de código Pytorch integrado en ROS 2
+## Ejemplo de código Pytorch integrado en ROS 2
 Este ejemplo, y su explicación paso a paso, se encuentra en la Sección 7.2.1.5 del libro. A continuación, se muestra un ejemplo completo de código en Python empleando Pytorch con integración en ROS 2 para clasificación de imágenes.
 
 ```
