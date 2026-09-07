@@ -50,7 +50,7 @@ El material sigue la estructura del libro:
 - **[Capítulo 4 – Simulación con Gazebo y RViz](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%204%20%E2%80%93%20Simulaci%C3%B3n%20con%20Gazebo%20y%20RViz/Readme.md)**
 - **[Capítulo 5 – Control de movimiento y navegación autónoma](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/Cap%C3%ADtulo%205%20%E2%80%93%20Control%20de%20movimiento%20y%20navegaci%C3%B3n%20aut%C3%B3noma/Readme.md)**
 - **[Capítulo 6 – Visión por computador con ROS2 y OpenCV](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%206%20%E2%80%93%20Visi%C3%B3n%20por%20computador%20con%20ROS2%20y%20OpenCV/Readme.md)**
-- **Capítulo 7 – Aprendizaje automático con Python en ROS2**
+- **[Capítulo 7 – Aprendizaje automático con Python en ROS2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%207%20%E2%80%93%20Aprendizaje%20autom%C3%A1tico%20con%20Python%20en%20ROS2/Readme.md)**
 - **Capítulo 8 – Introducción a los modelos de lenguaje (LLMs) y LangChain**
 - **Capítulo 9 – Integración de LangChain con ROS2**
 - **Capítulo 10 – Agentes inteligentes con LLMs en Robótica**
