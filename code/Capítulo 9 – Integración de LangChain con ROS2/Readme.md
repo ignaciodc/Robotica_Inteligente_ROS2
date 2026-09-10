@@ -222,7 +222,7 @@ A continuación, ROS 2 ejecuta:
 * Robot se mueve
 * Robot se detiene
 
-```
+
 
 
 
