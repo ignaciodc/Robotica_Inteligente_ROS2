@@ -51,8 +51,8 @@ El material sigue la estructura del libro:
 - **[Capítulo 5 – Control de movimiento y navegación autónoma](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/tree/main/code/Cap%C3%ADtulo%205%20%E2%80%93%20Control%20de%20movimiento%20y%20navegaci%C3%B3n%20aut%C3%B3noma/Readme.md)**
 - **[Capítulo 6 – Visión por computador con ROS2 y OpenCV](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%206%20%E2%80%93%20Visi%C3%B3n%20por%20computador%20con%20ROS2%20y%20OpenCV/Readme.md)**
 - **[Capítulo 7 – Aprendizaje automático con Python en ROS2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%207%20%E2%80%93%20Aprendizaje%20autom%C3%A1tico%20con%20Python%20en%20ROS2/Readme.md)**
-- **[Capítulo 8 – Introducción a los modelos de lenguaje (LLMs) y LangChain](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%209%20%E2%80%93%20Integraci%C3%B3n%20de%20LangChain%20con%20ROS2/Readme.md)**
-- **[Capítulo 9 – Integración de LangChain con ROS2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%208%20%E2%80%93%20Introducci%C3%B3n%20a%20los%20modelos%20de%20lenguaje%20(LLMs)%20y%20LangChain/Readme.md)**
+- **[Capítulo 8 – Introducción a los modelos de lenguaje (LLMs) y LangChain](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%208%20%E2%80%93%20Introducci%C3%B3n%20a%20los%20modelos%20de%20lenguaje%20(LLMs)%20y%20LangChain/Readme.md)**
+- **[Capítulo 9 – Integración de LangChain con ROS2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%209%20%E2%80%93%20Integraci%C3%B3n%20de%20LangChain%20con%20ROS2/Readme.md)**
 - **Capítulo 10 – Agentes inteligentes con LLMs en Robótica**
 
 Cada carpeta incluye su propio `README.md`, desde el que navegar por cada Capítulo. Se recomienda usar estos enlaces para navegar entre el material, en lugar de hacerlo con el menú de la izquierda.
