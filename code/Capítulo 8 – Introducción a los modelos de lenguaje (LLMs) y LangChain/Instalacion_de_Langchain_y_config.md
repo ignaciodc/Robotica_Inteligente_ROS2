@@ -33,23 +33,25 @@ Para usar modelos comerciales como OpenAI con LangChain, se deben definir variab
 ### Ejemplo mínimo
 Un ejemplo básico de interacción con un modelo usando LangChain, que ilustra cómo LangChain simplifica la interacción con modelos de lenguaje podría ser:
 
-```from langchain.llms import OpenAI
+```
+from langchain.llms import OpenAI
 llm = OpenAI(temperature=0.0)
 response = llm("Explica brevemente qué es un LLM")
-print(response)```
+print(response)
+```
 
 Instalaciones recomendadas para este ejemplo:
 
 * Python 3.9 o superior.
 * Entorno virtual recomendado (venv o conda).
 * Librería LangChain:
- * pip install langchain.
- * pip install langchain-community (necesario en versiones recientes).
+ * ```pip install langchain.```
+ * ```pip install langchain-community``` (necesario en versiones recientes).
 * Cliente de OpenAI (en este ejemplo):
- * pip install openai
+ * ```pip install openai```
 * Clave de API de OpenAI:
- * export OPENAI_API_KEY="tu_api_key_aqui" (Linux)/macOS
- * setx OPENAI_API_KEY "tu_api_key_aqui" Windows (CMD)
+ * ```export OPENAI_API_KEY="tu_api_key_aqui" (Linux)/macOS```
+ * ```setx OPENAI_API_KEY "tu_api_key_aqui" Windows (CMD)```
 
 
 
