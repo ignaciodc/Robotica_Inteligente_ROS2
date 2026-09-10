@@ -52,6 +52,14 @@ Instalaciones recomendadas para este ejemplo:
 * Clave de API de OpenAI:
   * ```export OPENAI_API_KEY="tu_api_key_aqui" (Linux)/macOS```
   * ```setx OPENAI_API_KEY "tu_api_key_aqui" Windows (CMD)```
+ 
+
+
+###	Ejemplo completo con Chain, memoria y herramientas
+A continuación, se presenta un ejemplo más completo, que incluye:
+* Memoria de conversación (permite recordar el contexto entre múltiples interacciones).
+* Uso de cadenas (Chains) para estructurar la interacción.
+* Manejo de herramientas (pueden ser funciones externas o APIs conectadas al LLM).
 
 
 
