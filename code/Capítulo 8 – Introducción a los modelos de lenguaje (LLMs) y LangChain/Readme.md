@@ -11,3 +11,6 @@ En los últimos años, los modelos de lenguaje de gran tamaño (Large Language M
 
 * **[Ejemplo completo usando LangChain con un modelo de HuggingFace](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%208%20%E2%80%93%20Introducci%C3%B3n%20a%20los%20modelos%20de%20lenguaje%20(LLMs)%20y%20LangChain/ejemplosdeuso_lang_hugging.md)**
 
+
+
+[← Volver atrás](Readme.md)
