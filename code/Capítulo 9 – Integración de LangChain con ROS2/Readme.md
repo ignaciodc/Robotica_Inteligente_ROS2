@@ -194,7 +194,7 @@ class Nav2Controller(Node):
             self.get_logger().warn(f"Acción no reconocida: {action}")
 
 # Función main:
-``` 
+
 def main(args=None):
     rclpy.init(args=args)
     node = NaturalLanguageController()
@@ -210,7 +210,7 @@ def main(args=None):
 
 # Ejemplo completo de ejecución
 Se supone que la entrada del usuario es: «Avanza lentamente y luego para», Una vez traducido el LLM produce los siguientes JSON, uno por cada orden:
-```
+
 1.	{ "action": "move", "params": { "speed": 0.2 } }
 2.	{ "action": "stop" }
   ``` 
