@@ -1,4 +1,4 @@
-###	Ejemplo completo con Chain, memoria y herramientas
+### Ejemplo completo empleando LangChain con la API de OpenAI
 
 A continuación, se presenta un ejemplo más completo, que incluye:
 * Memoria de conversación (permite recordar el contexto entre múltiples interacciones).
