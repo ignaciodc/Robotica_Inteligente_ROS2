@@ -4,4 +4,7 @@ En los últimos años, los modelos de lenguaje de gran tamaño (Large Language M
 
 
 * **[Instalación de Langchain y configuración con Python](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%208%20%E2%80%93%20Introducci%C3%B3n%20a%20los%20modelos%20de%20lenguaje%20(LLMs)%20y%20LangChain/Instalacion_de_Langchain_y_config.md)**
+  
+* **[Ejemplo completo con Chain, memoria y herramientas](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%208%20%E2%80%93%20Introducci%C3%B3n%20a%20los%20modelos%20de%20lenguaje%20(LLMs)%20y%20LangChain/ejemplosdeuso_llm_langchain.md)**
+
 * **[Ejemplo completo con Chain, memoria y herramientas](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%208%20%E2%80%93%20Introducci%C3%B3n%20a%20los%20modelos%20de%20lenguaje%20(LLMs)%20y%20LangChain/ejemplosdeuso_llm_langchain.md)**
