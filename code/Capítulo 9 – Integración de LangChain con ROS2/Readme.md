@@ -161,7 +161,7 @@ if action == "move":
 ```
 
 
-La línea comentada (Aquí se llamaría a _NavigateToPose (Nav2)_) se podría sustituir por una llamada a función (llamada en esta occasion (send_goal) como esta:
+La línea comentada (Aquí se llamaría a _NavigateToPose (Nav2)_) se podría sustituir por una llamada a función (llamada en esta occasion (_send_goal_) como esta:
 ```self.send_goal(cmd["params"]["x"],cmd["params"]["y"], cmd["params"].get("theta", 0.0))```
 
 Habría que añadir el siguiente código:
@@ -189,7 +189,7 @@ class Nav2Controller(Node):
 ```
 
 
-Siguiendo con el código
+Siguiendo con el código, a continuación de: _# Acción navegación global (placeholder)_
 ```
 # Acción no soportada:
 
