@@ -39,6 +39,7 @@ response = llm("Explica brevemente qué es un LLM")
 print(response)```
 
 Instalaciones recomendadas para este ejemplo:
+
 * Python 3.9 o superior.
 * Entorno virtual recomendado (venv o conda).
 * Librería LangChain:
