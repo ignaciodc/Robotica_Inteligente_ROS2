@@ -45,13 +45,13 @@ Instalaciones recomendadas para este ejemplo:
 * Python 3.9 o superior.
 * Entorno virtual recomendado (venv o conda).
 * Librería LangChain:
-  * pip install langchain.
+  * ```pip install langchain.```
   * ```pip install langchain-community``` (necesario en versiones recientes).
 * Cliente de OpenAI (en este ejemplo):
- * ```pip install openai```
+  * ```pip install openai```
 * Clave de API de OpenAI:
- * ```export OPENAI_API_KEY="tu_api_key_aqui" (Linux)/macOS```
- * ```setx OPENAI_API_KEY "tu_api_key_aqui" Windows (CMD)```
+  * ```export OPENAI_API_KEY="tu_api_key_aqui" (Linux)/macOS```
+  * ```setx OPENAI_API_KEY "tu_api_key_aqui" Windows (CMD)```
 
 
 
