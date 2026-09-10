@@ -23,6 +23,7 @@ Esto permite acceder a:
 
 Para usar modelos comerciales como OpenAI con LangChain, se deben definir variables de entorno:
 ```export OPENAI_API_KEY="tu_api_key" # Linux/ macOS```
+
 ```setx OPENAI_API_KEY "tu_api_key" # Windows(CMD)```
 
 
