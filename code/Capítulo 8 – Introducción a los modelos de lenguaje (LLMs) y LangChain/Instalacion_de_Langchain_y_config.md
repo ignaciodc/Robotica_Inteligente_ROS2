@@ -1,5 +1,5 @@
 ## Instalación y configuración con Python
-Todo el contenido de esta página se encuentra en la Sección 8.4 del libro.
+Todo el contenido de esta página y la explicación del código empleado se encuentra en la Sección 8.4 del libro.
 
 ### Requisitos previos mínimos
 * Python 3.9 o superior.
@@ -27,6 +27,28 @@ Para usar modelos comerciales como OpenAI con LangChain, se deben definir variab
 
 ```setx OPENAI_API_KEY "tu_api_key" # Windows(CMD)```
 
+
+###	Ejemplos de uso
+
+### Ejemplo mínimo
+Un ejemplo básico de interacción con un modelo usando LangChain, que ilustra cómo LangChain simplifica la interacción con modelos de lenguaje podría ser:
+
+```from langchain.llms import OpenAI
+llm = OpenAI(temperature=0.0)
+response = llm("Explica brevemente qué es un LLM")
+print(response)```
+
+Instalaciones recomendadas para este ejemplo:
+* Python 3.9 o superior.
+* Entorno virtual recomendado (venv o conda).
+* Librería LangChain:
+ * pip install langchain.
+ * pip install langchain-community (necesario en versiones recientes).
+* Cliente de OpenAI (en este ejemplo):
+ * pip install openai
+* Clave de API de OpenAI:
+ * export OPENAI_API_KEY="tu_api_key_aqui" (Linux)/macOS
+ * setx OPENAI_API_KEY "tu_api_key_aqui" Windows (CMD)
 
 
 
