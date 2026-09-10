@@ -19,6 +19,11 @@ Esto permite acceder a:
 * Modelos locales de HuggingFace.
 * Tokenizadores para modelos multilingües.
 
+###	Configuración de credenciales
+
+Para usar modelos comerciales como OpenAI con LangChain, se deben definir variables de entorno:
+```export OPENAI_API_KEY="tu_api_key" # Linux/ macOS```
+```setx OPENAI_API_KEY "tu_api_key" # Windows(CMD)```
 
 
 
