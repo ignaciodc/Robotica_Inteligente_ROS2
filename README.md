@@ -53,8 +53,9 @@ El material sigue la estructura del libro:
 - **[Capítulo 7 – Aprendizaje automático con Python en ROS2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%207%20%E2%80%93%20Aprendizaje%20autom%C3%A1tico%20con%20Python%20en%20ROS2/Readme.md)**
 - **[Capítulo 8 – Introducción a los modelos de lenguaje (LLMs) y LangChain](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%208%20%E2%80%93%20Introducci%C3%B3n%20a%20los%20modelos%20de%20lenguaje%20(LLMs)%20y%20LangChain/Readme.md)**
 - **[Capítulo 9 – Integración de LangChain con ROS2](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/blob/main/code/Cap%C3%ADtulo%209%20%E2%80%93%20Integraci%C3%B3n%20de%20LangChain%20con%20ROS2/Readme.md)**
-- **Capítulo 10 – Agentes inteligentes con LLMs en Robótica**
+- **[Capítulo 10 – Agentes inteligentes con LLMs en Robótica](https://github.com/ignaciodc/Robotica_Inteligente_ROS2/edit/main/code/Cap%C3%ADtulo%2010%20-%20Agentes%20inteligentes%20con%20LLMs%20en%20Rob%C3%B3tica/Readme.md)**
 
+- 
 Cada carpeta incluye su propio `README.md`, desde el que navegar por cada Capítulo. Se recomienda usar estos enlaces para navegar entre el material, en lugar de hacerlo con el menú de la izquierda.
 
 ---
