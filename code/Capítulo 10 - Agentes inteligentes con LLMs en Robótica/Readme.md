@@ -5,4 +5,5 @@ Los agentes inteligentes respaldados por modelos de lenguaje de gran tamaño (LL
 En este capítulo no existe código para emplear ni practicar. Sirve de ejemplo y puente para la continuación de esta obra, que se centrará en el uso en profundidad de los LLMs en Robótica.
 
 <br>
+
 [← Volver atrás](../../README.md)
